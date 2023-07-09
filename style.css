@@ -7,6 +7,7 @@
 body {
     color: #A54328;
     font-size: 1.6rem;
+    background: url("./assets/bg.png");
 }
 
 main {
@@ -64,4 +65,37 @@ ul, ol {
 
 ul {
     margin-bottom: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 9rem 6rem;
+        flex-direction: row;
+        max-width: fit-content;
+        gap: 16rem;
+    }
+
+    .recipe {
+        max-width: 43.5rem;
+    }
+
+    .ingredients {
+        max-width: 52.5rem;
+    }
+
+    h1, h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    p, li, strong {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    button {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem; 
+    }
 }
